@@ -1,0 +1,12 @@
+!python scripts/sample_mp.py \
+    --finetuned_ckpt="ckpts/turtle/shot-1_lora_rank10" \
+    --output_root="outputs/aug_samples" \
+    --dataset="turtle" \
+    --syn_dataset_mulitiplier=2 \
+    --sample_strategy="diff-mix" \
+    --strength_strategy="fixed" \
+    --aug_strength=0.8 \
+    --examples_per_class=100 \
+    --resolution=512 \
+    --batch_size=4 \
+    --gpu_ids 0

@@ -1,0 +1,13 @@
+!accelerate launch train_lora.py \
+    --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" \
+    --dataset_name="turtle" \
+    --resolution=512 \
+    --random_flip \
+    --max_train_steps=5000 \
+    --num_train_epochs=10 \
+    --learning_rate=5e-5 \
+    --rank=10 \
+    --train_batch_size=2 \
+    --seed=42 \
+    --output_dir="ckpts/turtle/shot-1_lora_rank10" \
+    --examples_per_class=-1

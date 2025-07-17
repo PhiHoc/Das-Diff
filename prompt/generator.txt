@@ -1,0 +1,8 @@
+Generate a diverse list of short, realistic environment descriptions for natural habitats where the {subject} species could appear.
+Each description should be concise (ideally under 15 words).
+Start directly with phrases like "in...", "beside...", "under...", "among...", etc.
+Do NOT mention or imply the {subject} itself (e.g., do not say "habitat of a bear").
+Avoid overly poetic or overly detailed sentences that are hard to visualize.
+Use clear, neutral, realistic language focusing on simple background elements like forests, rivers, meadows, mountains, snow, etc.
+These descriptions will be combined with a separate fixed prompt about the {subject} and sent to an image generation model. The goal is to teach the model to vary the background while keeping the {subject} consistent for classification purposes.
+Output format: A txt file, one short description per line, 100 line.
