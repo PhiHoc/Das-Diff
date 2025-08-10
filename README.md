@@ -133,19 +133,7 @@ python train_dasdiff.py \
   --synthetic_probability 0.2 \
   --model resnet18
 ```
-
 ---
-
-## Results
-
-| Dataset  | Baseline Acc (%) | DasDiff Acc (%) | Speedup over Diff-Aug |
-|----------|------------------|-----------------|-----------------------|
-| Turtle   | 79.5             | **87.4**        | ~4×                   |
-| Bear     | 48.6             | **62.3**        | ~4×                   |
-| Python   | 55.6             | **66.1**        | ~4×                   |
-| Panther  | 43.5             | **59.8**        | ~4×                   |
----
-
 
 ## 🔮 Citation
 ```
