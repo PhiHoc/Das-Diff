@@ -64,6 +64,31 @@ peft==0.5.0
 
 ---
 
+
+## Datasets
+The image data used for this project can be downloaded from the following link: 
+[**Download Dataset (Google Drive)**](https://drive.google.com/file/d/1C2vdiTQOpMqZ4GXig2SKO8rE0rdJo8_B/view?usp=sharing)
+
+Each dataset (Bear, Turtle, Panther, Python) is structured as:
+
+```
+data/
+├── train_origin/
+│   └── <dataset>/
+│       └── class_name/
+│           └── *.jpg
+├── test/
+│   └── <dataset>/
+└── synthetic/
+    └── data/
+        └── class_name/
+            └── *.png
+```
+
+You must register dataset classes in `dataset/__init__.py`.
+
+---
+
 ## Usage
 
 ### 1. Finetune 
@@ -121,27 +146,6 @@ python train_dasdiff.py \
 | Panther  | 43.5             | **59.8**        | ~4×                    |
 ---
 
-## Datasets
-
-Each dataset (Bear, Turtle, Panther, Python) is structured as:
-
-```
-data/
-├── train_origin/
-│   └── <dataset>/
-│       └── class_name/
-│           └── *.jpg
-├── test/
-│   └── <dataset>/
-└── synthetic/
-    └── data/
-        └── class_name/
-            └── *.png
-```
-
-You must register dataset classes in `dataset/__init__.py`.
-
----
 
 ## 🔮 Citation
 ```
